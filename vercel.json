@@ -1,0 +1,8 @@
+{
+  "_comment": "This file is NOT used for deployment. Frontend and backend are deployed separately.",
+  "_instructions": [
+    "For backend deployment: Use backend/vercel.json",
+    "For frontend deployment: Use frontend/vercel.json",
+    "See VERCEL_SEPARATE_DEPLOYMENTS.md for deployment instructions"
+  ]
+} 

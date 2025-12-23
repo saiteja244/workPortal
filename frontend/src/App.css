@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Messaging Component Styles */
+.messaging-container {
+  height: calc(100vh - 200px);
+  min-height: 500px;
+}
+
+.messaging-sidebar {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e0 #f7fafc;
+}
+
+.messaging-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messaging-sidebar::-webkit-scrollbar-track {
+  background: #f7fafc;
+}
+
+.messaging-sidebar::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+}
+
+.messaging-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+.messages-area {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e0 #f7fafc;
+}
+
+.messages-area::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages-area::-webkit-scrollbar-track {
+  background: #f7fafc;
+}
+
+.messages-area::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+}
+
+.messages-area::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+/* Ensure proper text wrapping */
+.message-content {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .messaging-container {
+    height: calc(100vh - 150px);
+  }
+}
